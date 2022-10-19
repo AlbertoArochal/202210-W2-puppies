@@ -15,11 +15,28 @@ header {
     font-size: large;
     font-weight: 800;
 
+
 }
 
 header div {
     margin-right: 6.5em;
     height: 2em;
+}
+
+header div p:not(:first-child)::after {
+    content: " ▾";
+}
+
+header div *:hover {
+    cursor: pointer;
+}
+
+header div p:hover {
+    color: orangered;
+    border-bottom: 2px solid orangered;
+    padding-bottom: 1em;
+
+
 }
 
 header img {
@@ -34,6 +51,7 @@ header img {
     top: 50%;
     margin: auto 1em;
     font-size: larger;
+    transition: 0.3s;
 
 }
 
@@ -46,7 +64,7 @@ section div span h1 {
 button {
     border: solid orangered 2px;
     border-radius: 0px 20px 30px 40px/30px;
-    padding: 1em;
+    padding: 0.6em 1em;
 }
 
 button:hover {
@@ -56,6 +74,15 @@ button:hover {
 header button {
     background-color: white;
     border: 2px orangered solid;
+    transition: 0.3s;
+    font-weight: 700;
+
+}
+
+header button:hover {
+    background-color: orangered;
+    color: white;
+
 }
 
 .text__container {
@@ -63,7 +90,7 @@ header button {
     text-align: left
 }
 
-section>div>img {
+section>div>div>img {
     display: inline;
     border-radius: 10%;
     width: 500px;
@@ -75,6 +102,7 @@ section>div>img {
 
 }
 
+
 section>div {
     justify-items: space-between;
     border: 2px green solid;
@@ -82,8 +110,7 @@ section>div {
     text-align: center;
 }
 
-section>div>img:hover {
-    width: 33%;
+section>div>div>img:hover {
     cursor: pointer;
 }
 
@@ -95,7 +122,13 @@ section>div>span>button {
     font-weight: 600;
     height: 45%;
     margin-top: 30px;
+    transition: 0.3s;
 
+}
+
+section>div>span>button:hover {
+    background-color: white;
+    color: orangered;
 }
 
 section>div>* {
