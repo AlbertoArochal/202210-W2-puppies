@@ -1,9 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito';
+
+}
+
 header {
     box-shadow: 3px black;
     border: 2px tomato solid;
     justify-content: space-between;
     display: flex;
+    font-size: large;
+    font-weight: 800;
 
+}
+
+header div {
+    margin-right: 6.5em;
+    height: 2em;
+}
+
+header img {
+    width: 5%;
+    margin-left: 6em;
 }
 
 .sections__container>* {
@@ -14,6 +35,12 @@ header {
     margin: auto 1em;
     font-size: larger;
 
+}
+
+section div span h1 {
+    font-weight: 800;
+    font-size: 3em;
+    margin-left: 3.5em;
 }
 
 button {
@@ -66,6 +93,9 @@ section>div>span>button {
     color: white;
     font-size: 1.3em;
     font-weight: 600;
+    height: 45%;
+    margin-top: 30px;
+
 }
 
 section>div>* {
@@ -75,6 +105,10 @@ section>div>* {
 
 section>div>p {
     display: block;
+    font-size: larger;
+    color: orangered;
+    font-weight: 800;
+    margin-left: 8.5em;
 }
 
 section>div>span {
