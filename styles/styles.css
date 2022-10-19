@@ -87,10 +87,52 @@ header button:hover {
 
 .text__container {
     border: blue solid 2px;
-    text-align: left
+    text-align: left:
 }
 
-section>div>div>img {
+div[class^='puppy']>* {
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5em;
+    background-color: tomato;
+    position: relative;
+    top: 45%
+}
+
+div[class^='puppy']:hover * {
+    visibility: visible;
+    opacity: 1;
+}
+
+.puppy__1 {
+    background-image: url("/images/01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.puppy__2 {
+    background-image: url("/images/02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.puppy__3 {
+    background-image: url("/images/03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+section>div>div>div {
     display: inline;
     border-radius: 10%;
     width: 500px;
@@ -99,9 +141,14 @@ section>div>div>img {
     image-orientation: from-image;
     transition: 0.3s;
     object-fit: cover;
+    background-color: tomato;
+    cursor: pointer;
 
 }
 
+.image1__container {
+    display: flex;
+}
 
 section>div {
     justify-items: space-between;
