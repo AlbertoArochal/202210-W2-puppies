@@ -1,0 +1,17 @@
+header {
+    box-shadow: 3px black;
+    border: 2px tomato solid;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.sections__container>* {
+    border: 2px purple solid;
+    display: inline;
+    position: relative;
+    top: 50%;
+    margin: auto 1em;
+    font-size: larger;
+
+}
