@@ -8,14 +8,12 @@
 }
 
 header {
-    box-shadow: 3px black;
-    border: 2px tomato solid;
+    box-shadow: 10px 10px 5px rgb(226, 219, 219);
     justify-content: space-between;
     display: flex;
     font-size: large;
     font-weight: 800;
-
-
+    box-shadow: 3px;
 }
 
 header div {
@@ -45,7 +43,6 @@ header img {
 }
 
 .sections__container>* {
-    border: 2px purple solid;
     display: inline;
     position: relative;
     top: 50%;
@@ -86,7 +83,6 @@ header button:hover {
 }
 
 .text__container {
-    border: blue solid 2px;
     text-align: left:
 }
 
@@ -98,29 +94,35 @@ div[class^='puppy']>* {
     text-align: center;
     justify-content: center;
     font-size: 1.5em;
-    background-color: tomato;
     position: relative;
-    top: 45%
+    top: 45%;
 }
+
+
 
 div[class^='puppy']:hover * {
     visibility: visible;
     opacity: 1;
 }
 
-.puppy__1 {
+
+.puppy__1:not(p) {
     background-image: url("/images/01.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    -webkit-filter: contrast(110%);
 
 }
+
+
 
 .puppy__2 {
     background-image: url("/images/02.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    -webkit-filter: contrast(110%);
 
 }
 
@@ -129,6 +131,7 @@ div[class^='puppy']:hover * {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    -webkit-filter: contrast(110%);
 
 }
 
@@ -141,18 +144,17 @@ section>div>div>div {
     image-orientation: from-image;
     transition: 0.3s;
     object-fit: cover;
-    background-color: tomato;
     cursor: pointer;
 
 }
 
 .image1__container {
     display: flex;
+    justify-content: center;
 }
 
 section>div {
     justify-items: space-between;
-    border: 2px green solid;
     display: flexbox;
     text-align: center;
 }
@@ -179,7 +181,6 @@ section>div>span>button:hover {
 }
 
 section>div>* {
-    border: 2px yellow solid;
     display: inline;
 }
 
@@ -189,6 +190,7 @@ section>div>p {
     color: orangered;
     font-weight: 800;
     margin-left: 8.5em;
+    text-align: left;
 }
 
 section>div>span {
