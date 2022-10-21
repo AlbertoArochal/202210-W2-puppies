@@ -258,6 +258,11 @@ section>div>span {
 
 @media (max-width: 425px) {
 
+    .text__container {
+        text-align: center;
+        width: 425px;
+    }
+
     .image1__container {
         display: grid;
     }
@@ -287,29 +292,29 @@ section>div>span {
         margin-left: 6vw;
     }
 
-    span {
+    span.span__container {
         font-size: 0.5em;
-        text-align: center;
-        width: 100vw;
-        margin: auto;
-
-    }
-
-    span button {
+        width: 425px;
+        margin: 0;
         display: block;
-        margin-top: 0;
-        position: relative;
-        left: 43%;
+        max-width: 100%;
     }
 
-    span h1 {
-        display: block;
-        position: absolute;
-        top: 10%;
+    .span__container>h1 {
+        width: 425px;
+        text-align: left;
+        display: inline;
+        margin-left: 0;
     }
+
+    .puppie__button {
+        display: none;
+
+    }
+
 
     section>div>p {
-        margin: 1em auto;
+        margin: 1em 0;
         text-align: center;
         font-size: 1em;
     }
