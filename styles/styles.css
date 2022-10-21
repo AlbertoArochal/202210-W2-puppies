@@ -255,3 +255,34 @@ section>div>span {
     justify-content: space-between;
     max-width: 92%;
 }
+
+@media (max-width: 425px) {
+
+    .image1__container {
+        display: grid;
+    }
+
+
+    .image1__container * {
+        border: 2px red solid;
+        max-width: 65vw;
+        max-height: 40vh;
+    }
+
+    .sections__container {
+        display: none;
+    }
+
+    header {
+        height: 8vh;
+    }
+
+    header img {
+        width: 13vw;
+        margin-left: 13vw;
+    }
+
+    span {
+        font-size: 0.5em;
+    }
+}
