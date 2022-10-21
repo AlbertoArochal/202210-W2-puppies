@@ -264,25 +264,52 @@ section>div>span {
 
 
     .image1__container * {
-        border: 2px red solid;
-        max-width: 65vw;
+        max-width: 80vw;
         max-height: 40vh;
     }
 
+
     .sections__container {
         display: none;
+
     }
 
     header {
-        height: 8vh;
+        height: 6vh;
+        width: 100vw;
+        margin-left: 0;
     }
 
     header img {
-        width: 13vw;
-        margin-left: 13vw;
+        width: 9vw;
+        height: 5vh;
+        margin-left: 6vw;
     }
 
     span {
         font-size: 0.5em;
+        text-align: center;
+        width: 100vw;
+        margin: auto;
+
+    }
+
+    span button {
+        display: block;
+        margin-top: 0;
+        position: relative;
+        left: 43%;
+    }
+
+    span h1 {
+        display: block;
+        position: absolute;
+        top: 10%;
+    }
+
+    section>div>p {
+        margin: 1em auto;
+        text-align: center;
+        font-size: 1em;
     }
 }
